@@ -1,43 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-.box {
+/* Create three equal columns that float next to each other */
+.column {
   float: left;
   width: 33.33%;
-  padding: 50px;
 }
 
-.clearfix::after {
+/* Clear floats after the columns */
+.row:after {
   content: "";
-  clear: both;
   display: table;
+  clear: both;
 }
-</style>
-</head>
-<body>
 
-<h2>Grid of Boxes</h2>
-<p>Float boxes side by side:</p>
-
-<div class="clearfix">
-  <div class="box" style="background-color:#bbb">
-  <p>Some text inside the box.</p>
-  </div>
-  <div class="box" style="background-color:#ccc">
-  <p>Some text inside the box.</p>
-  </div>
-  <div class="box" style="background-color:#ddd">
-  <p>Some text inside the box.</p>
-  </div>
-</div>
-
-<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. 
-We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
-
-</body>
-</html>
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
