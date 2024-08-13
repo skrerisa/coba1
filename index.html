@@ -3,20 +3,28 @@
 <head>
 <style>
 div {
-  width: 320px;
-  height: 50px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin: 0;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
 }
 </style>
 </head>
 <body>
 
-<h2>Calculate the total width:</h2>
+<h1>CSS Animation</h1>
 
-<img src="klematis4_big.jpg" width="350" height="263" alt="Klematis">
-<div>The picture above is 350px wide. The total width of this element is also 350px. The total height of this element is 80px.</div>
+<div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
 
 </body>
 </html>
