@@ -1,63 +1,67 @@
-‹!DOCTYPE html>
-<html Lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-        ‹<meta charset="UTF-8">
-        <meta name="viowport" content="width=device-width, initial-scale=1.0">
-        ‹<title>LatWEB01</title>
-        <style>
-                body {
-                    margin: 0;
-                }
-
-                table{
-                    width: 100%;
-                    border-collapse: collapse;
-                    border: 1px solid #ccc;
-                }
-
-                th, td {
-                    padding: 10px;
-                    border: 1px solid #ccc;
-                }
-
-                .header {
-                    background-color: #ffe6cc;
-                    text-align: center;
-                }
-
-                .nav {
-                    background-color: #e6f2ff ;
-                    text-align:center;
-                }
-
-                .content {
-                    background-color: #ffe6e6;
-                }
-
-                .sidebar {
-                    background-color: #e0ffe6;
-                }
-
-                .footer {
-                    background-color: #ffe6cc;
-                    text-align: center;
-                }
-
-                .heading {
-                    font-size: 24px;
-                    font-weight: bold;
-                }
-
-                .text {
-                    font-size: 16px;
-                }
-        </style>       
-    </head>
-    <body>
-                <table>
-                    <thead>
-                        
-                    </thead>
-                </table>
-    </body>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatihanWeb01</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #ffe6cc; /* warna header dan footer */
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #e6f2ff; /* warna navigasi */
+            text-align: center;
+            padding: 10px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main-content {
+            background-color: #ffe6e6; /* warna area konten utama */
+            padding: 20px;
+            width: 75%;
+        }
+        .sidebar {
+            background-color: #e0ffe6; /* warna sidebar */
+            padding: 20px;
+            width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HEADER</h1>
+    </header>
+    
+    <nav>
+        <p>NAVIGASI</p>
+    </nav>
+    
+    <div class="content">
+        <div class="main-content">
+            <h1>Heading 1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Menu:</h2>
+            <ul>
+                <li>Home</li>
+                <li>Berita</li>
+                <li>Layanan</li>
+                <li>Kontak</li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer>
+        <p>FOOTER</p>
+    </footer>
+</body>
+</html>
