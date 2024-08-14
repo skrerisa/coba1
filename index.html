@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LatihanWeb01</title>
     <style>
-        table{
-            width:  40%;
-            border-collapse: collapse;
-            margin: 0 auto;
-        }
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -25,19 +19,20 @@
             text-align: center;
             padding: 10px;
         }
-        .content {
-            display: flex;
-            justify-content: space-between;
+        table {
+            width: 60%; /* Mengatur lebar tabel untuk 60% dari lebar halaman */
+            margin: 0 auto; /* Menempatkan tabel di tengah */
+            border-collapse: collapse;
         }
         .main-content {
             background-color: #ffe6e6; /* warna area konten utama */
             padding: 20px;
-            width: 75%;
+            vertical-align: top; /* Mengatur konten di atas */
         }
         .sidebar {
             background-color: #e0ffe6; /* warna sidebar */
             padding: 20px;
-            width: 25%;
+            vertical-align: top; /* Mengatur konten di atas */
         }
     </style>
 </head>
@@ -50,21 +45,23 @@
         <p>NAVIGASI</p>
     </nav>
     
-    <div class="content">
-        <div class="main-content">
-            <h1>Heading 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="sidebar">
-            <h2>Menu:</h2>
-            <ul>
-                <li>Home</li>
-                <li>Berita</li>
-                <li>Layanan</li>
-                <li>Kontak</li>
-            </ul>
-        </div>
-    </div>
+    <table>
+        <tr>
+            <td class="main-content">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </td>
+            <td class="sidebar">
+                <h2>Menu:</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Berita</li>
+                    <li>Layanan</li>
+                    <li>Kontak</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
     
     <footer>
         <p>FOOTER</p>
