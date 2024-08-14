@@ -5,69 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LatihanWeb01</title>
     <style>
-        table{
-            width:  40%;
-            border-collapse: collapse;
-            margin: 0 auto;
-        }
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
         }
-        header, footer {
-            background-color: #ffe6cc; /* warna header dan footer */
+
+        table {
+            width: 60%; /* Mengatur lebar tabel */
+            margin: 0 auto; /* Menempatkan tabel di tengah */
+            border-collapse: collapse; /* Menghapus jarak antar sel */
+        }
+
+        td {
+            padding: 20px;
             text-align: center;
-            padding: 10px;
+            vertical-align: top; /* Memastikan konten berada di atas */
         }
-        nav {
-            background-color: #e6f2ff; /* warna navigasi */
-            text-align: center;
-            padding: 10px;
+
+        /* Warna bagian header */
+        .header {
+            background-color: #ffe6cc;
         }
-        .content {
-            display: flex;
-            justify-content: space-between;
+
+        /* Warna bagian navigasi */
+        .nav {
+            background-color: #e6f2ff;
         }
+
+        /* Warna bagian konten utama */
         .main-content {
-            background-color: #ffe6e6; /* warna area konten utama */
-            padding: 20px;
-            width: 75%;
+            background-color: #ffe6e6;
         }
+
+        /* Warna bagian sidebar */
         .sidebar {
-            background-color: #e0ffe6; /* warna sidebar */
-            padding: 20px;
-            width: 25%;
+            background-color: #e0ffe6;
+        }
+
+        /* Warna bagian footer */
+        .footer {
+            background-color: #ffe6cc;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>HEADER</h1>
-    </header>
-    
-    <nav>
-        <p>NAVIGASI</p>
-    </nav>
-    
-    <div class="content">
-        <div class="main-content">
-            <h1>Heading 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div class="sidebar">
-            <h2>Menu:</h2>
-            <ul>
-                <li>Home</li>
-                <li>Berita</li>
-                <li>Layanan</li>
-                <li>Kontak</li>
-            </ul>
-        </div>
-    </div>
-    
-    <footer>
-        <p>FOOTER</p>
-    </footer>
+    <table>
+        <!-- Header -->
+        <tr>
+            <td colspan="2" class="header">
+                <header>
+                    <h1>HEADER</h1>
+                </header>
+            </td>
+        </tr>
+
+        <!-- Navigasi -->
+        <tr>
+            <td colspan="2" class="nav">
+                <nav>
+                    <p>NAVIGASI</p>
+                </nav>
+            </td>
+        </tr>
+
+        <!-- Konten Utama dan Sidebar -->
+        <tr>
+            <td class="main-content" style="width: 75%;">
+                <h1>Heading 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </td>
+            <td class="sidebar" style="width: 25%;">
+                <h2>Menu:</h2>
+                <ul>
+                    <li>Home</li>
+                    <li>Berita</li>
+                    <li>Layanan</li>
+                    <li>Kontak</li>
+                </ul>
+            </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+            <td colspan="2" class="footer">
+                <footer>
+                    <p>FOOTER</p>
+                </footer>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
