@@ -11,15 +11,16 @@
         }
 
         table {
-            width: 50%; /* Mengatur lebar tabel */
-            margin: 0 auto; /* Menempatkan tabel di tengah */
+            width: 100%; /* Mengatur lebar tabel */
             border-collapse: collapse; /* Menghapus jarak antar sel */
+            margin-bottom: 20px; /* Jarak bawah antar tabel */
         }
 
         td {
             padding: 20px;
             text-align: center;
             vertical-align: top; /* Memastikan konten berada di atas */
+            border: 1px solid #ccc; /* Menambahkan garis tepi pada tabel */
         }
 
         /* Warna bagian header */
@@ -49,50 +50,58 @@
     </style>
 </head>
 <body>
-    <table>
-        <!-- Header -->
-        <tr>
-            <td colspan="2" class="header">
-                <header>
+    <!-- Tabel untuk Header -->
+    <header>
+        <table class="header">
+            <tr>
+                <td>
                     <h1>HEADER</h1>
-                </header>
-            </td>
-        </tr>
+                </td>
+            </tr>
+        </table>
+    </header>
 
-        <!-- Navigasi -->
-        <tr>
-            <td colspan="2" class="nav">
-                <nav>
+    <!-- Tabel untuk Navigasi -->
+    <nav>
+        <table class="nav">
+            <tr>
+                <td>
                     <p>NAVIGASI</p>
-                </nav>
-            </td>
-        </tr>
+                </td>
+            </tr>
+        </table>
+    </nav>
 
-        <!-- Konten Utama dan Sidebar -->
-        <tr>
-            <td class="main-content" style="width: 75%;">
-                <h1>Heading 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </td>
-            <td class="sidebar" style="width: 25%;">
-                <h2>Menu:</h2>
-                <ul>
-                    <li>Home</li>
-                    <li>Berita</li>
-                    <li>Layanan</li>
-                    <li>Kontak</li>
-                </ul>
-            </td>
-        </tr>
+    <!-- Tabel untuk Konten Utama dan Sidebar -->
+    <section>
+        <table class="content">
+            <tr>
+                <td class="main-content" style="width: 75%;">
+                    <h1>Heading 1</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </td>
+                <td class="sidebar" style="width: 25%;">
+                    <h2>Menu:</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Berita</li>
+                        <li>Layanan</li>
+                        <li>Kontak</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
 
-        <!-- Footer -->
-        <tr>
-            <td colspan="2" class="footer">
-                <footer>
+    <!-- Tabel untuk Footer -->
+    <footer>
+        <table class="footer">
+            <tr>
+                <td>
                     <p>FOOTER</p>
-                </footer>
-            </td>
-        </tr>
-    </table>
+                </td>
+            </tr>
+        </table>
+    </footer>
 </body>
 </html>
